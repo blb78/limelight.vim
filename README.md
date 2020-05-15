@@ -60,8 +60,12 @@ let g:limelight_eop = '\ze\n^\s'
 let g:limelight_priority = -1
 
 " focus mode
-" set it to 1 to activate that mode, default value 0
+" set it to 1 to activate that mode (default: 0)
 let g:limelight_focus_mode = 1
+
+" focus mode only
+" set it to 1 if you only want the focus mode (default: 0)
+let g:limelight_only_focus_mode = 1
 ```
 
 Goyo.vim integration
