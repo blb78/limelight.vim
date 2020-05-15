@@ -27,6 +27,7 @@ endif
 let g:loaded_limelight = 1
 
 let g:limelight_focus_mode = get(g:, 'limelight_focus_mode', 0)
+let g:limelight_only_focus_mode = get(g:, 'limelight_only_focus_mode', 0)
 
 let s:cpo_save = &cpo
 set cpo&vim
@@ -83,7 +84,9 @@ function! s:limelight()
 	endif
 
 	call s:clear_hl()
-	call call('s:hl', paragraph)
+	if g:limelight_only_focus_mode == 0
+		call call('s:hl', paragraph)
+	endif
 	let w:limelight_prev = extend(curr, paragraph)
 endfunction
 
