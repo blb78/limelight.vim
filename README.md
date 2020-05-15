@@ -65,7 +65,7 @@ let g:limelight_focus_mode = 1
 
 " focus mode only
 " set it to 1 if you only want the focus mode (default: 0)
-let g:limelight_only_focus_mode = 1
+let g:limelight_focus_mode_only = 1
 ```
 
 Goyo.vim integration
