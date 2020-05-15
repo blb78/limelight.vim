@@ -58,6 +58,10 @@ let g:limelight_eop = '\ze\n^\s'
 " Highlighting priority (default: 10)
 "   Set it to -1 not to overrule hlsearch
 let g:limelight_priority = -1
+
+" focus mode
+" set it to 1 to activate that mode, default value 0
+let g:limelight_focus_mode = 1
 ```
 
 Goyo.vim integration
