@@ -237,7 +237,7 @@ function! s:on(range, ...)
 	augroup END
 
 	" FIXME: We cannot safely remove this group once Limelight started
-	if g:limelight_focus_mode == 1
+	if g:limelight_focus_mode == 1 || g:limelight_focus_mode_only == 1
 		augroup limelight_focus
 			autocmd!
 			autocmd WinEnter * call s:off() | call s:on([])
